@@ -1,39 +1,43 @@
-# myrecord-hugo
+指导网站:https://gohugo.io/getting-started/quick-start/
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+1. 打开windows powershell
 
-#### 软件架构
-软件架构说明
+2. winget search Microsoft.PowerShell
+
+3. winget install --id Microsoft.PowerShell --source winget
+
+4. winget install Hugo.Hugo.Extended
+
+启动
+  hugo new site myrecord-hugo
+  cd myrecord-hugo
+  git init
+  git submodule add https://gitee.com/nism-github/gohugo-theme-ananke.git themes/ananke
+  echo "theme = 'ananke'" >> hugo.toml
+  hugo server
+  
+5.创建文章
+
+hugo new content content/posts/redis01.md
+
+启动
+hugo --buildDrafts    # or -D
+hugo --buildExpired   # or -E
+hugo --buildFuture    # or -F
+发布-不包括  draft, future, or expired content 内容
+hugo
+帮助命令hugo help
+创建不同的配置文件: hugo --config other.toml 或者  hugo --config a.toml,b.yaml,c.json
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+title: "文章标题"
+date: 2024-03-21
+draft: false
+tags: ["Java", "Spring"]
+categories: ["后端开发"]
+description: "这是文章描述"
+weight: 1
+cover:
+    image: "cover.jpg"    # 封面图片
+    alt: "封面图片描述"
+    caption: "图片标题"

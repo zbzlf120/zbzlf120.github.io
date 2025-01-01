@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on 似水年华</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on 似水年华</description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 01 Jan 2025 13:21:07 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>后端开发</title>
+      <link>http://localhost:1313/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Wed, 01 Jan 2025 13:21:07 +0800</pubDate>
+      <guid>http://localhost:1313/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
