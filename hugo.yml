@@ -44,6 +44,9 @@ Params:
   # 启用搜索
   enableSearch: true
 
+caches:
+  images:
+    dir: :cacheDir/images
 # 显示菜单按钮
   showMenuItems: true
   ShowWordCount: true

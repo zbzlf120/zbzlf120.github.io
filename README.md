@@ -21,6 +21,7 @@
 hugo new content content/posts/redis01.md
 
 启动
+hugo server   
 hugo --buildDrafts    # or -D
 hugo --buildExpired   # or -E
 hugo --buildFuture    # or -F
