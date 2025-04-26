@@ -2,6 +2,9 @@ baseURL: 'https://localhost/'
 languageCode: 'zh-CN'
 title: '似水年华'
 theme: 'hugo-PaperMod-8.0'
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 menu:
   main:
     - identifier: "home"
@@ -28,6 +31,11 @@ menu:
       name: "分类"
       url: "/categories/"
       weight: 50
+
+    - identifier: "search"
+      name: "搜索"
+      url: "/search/"
+      weight: 70
     
 taxonomies:
   tag: "tags"
@@ -36,18 +44,15 @@ Params:
   footer:
     powered: false
   ShowReadingTime: true
+  ShowCoverInList: true  # 在文章列表页显示封面图片
+  ShowCoverInSingle: true  # 在单篇文章页显示封面图片
   ShowToc: true
   TocOpen: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   comments: true
-  # 启用搜索
-  enableSearch: true
-
-caches:
-  images:
-    dir: :cacheDir/images
-# 显示菜单按钮
+  DateFormat: "2006-01-02 15:04:05"
+  # 显示菜单按钮
   showMenuItems: true
   ShowWordCount: true
   defaultTheme: "auto"
@@ -55,12 +60,55 @@ caches:
   ShowFullTextinRSS: true
   ShowReadingTime: true
   ShowWordCount: true
-  DateFormat: "2006-01-02 15:04:05"
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   timeZone: "Asia/Shanghai"
+  # 启用搜索
+  enableSearch: true
+  search:
+    enable: true
+    type: fusejs # 使用 fusejs 作为搜索引擎
+    limit: 10 # 搜索结果显示数量
+    placeholder: 搜索...
+
+caches:
+  images:
+    dir: :cacheDir/images
+
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+    # - SearchIndex # 添加搜索索引输出
+
+tags:
+  - responsive
+  - simple
+  - clean
+  - light
+  - dark
+  - blog
+  - minimalist
+  - highlight.js
+  - search
+
+features:
+  - responsive
+  - single-column
+  - blog
+  - cover-image
+  - table-of-contents
+  - opengraph
+  - highlight.js
+  - favicon
+  - archive
+  - share-icons
+  - cover
+  - multilingual
+  - social-icons
+  - minified-assets
+  - theme-toggle
+  - menu-location-indicator
+  - scroll-to-top
+  - search

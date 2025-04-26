@@ -1,13 +1,21 @@
-+++
-date = 2025-01-01T13:21:07+08:00
-draft = true
-title = 'Mybatis01'
-tags = ["Java","mybatis"]
-categories = ["后端开发"]
-+++
-
+---
+date: "2025-01-01T13:21:07+08:00"
+draft: false
+title: 'Mybatis01'
+tags:
+  - Java
+  - mybatis
+categories:
+  - 后端开发
+cover:
+    image: "/pic/mybaties.png" # image path/url
+    alt: "mybaties" # alt text
+    caption: "mybaties" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: false # only hide on current single page
+---
+<!-- ![图片描述](/pic/mybaties.png) -->
 ### Mybatis常用Mapper语句
-
 
 #### 插入
 

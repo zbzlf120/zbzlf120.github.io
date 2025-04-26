@@ -124,6 +124,11 @@
                     <span>分类</span>
                 </a>
             </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -135,20 +140,16 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/pic/mybaties.png" alt="mybaties">
+</figure>
   <header class="entry-header">
     <h2 class="entry-hint-parent">Mybatis01
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h2>
   </header>
   <div class="entry-content">
-    <p>Mybatis常用Mapper语句 插入 /*简单插入*/ &lt;insert id=&#34;insertOne&#34; parameterType=&#34;Person&#34;&gt; insert into person (id, name, age) values(#{id},#{name},#{age}); &lt;/insert&gt; /* 插入并返回对象的主键（数据库序列） */ &lt;insert id=&#34;insertOne&#34; parameterType=&#34;Person&#34; useGeneratedKeys=&#34;true&#34; keyProperty=&#34;id&#34;&gt; insert into person (name, age) VALUES(#{name}, #{age}); &lt;/insert&gt; 更新 /* 简单更新 */ &lt;update id=&#34;updateName&#34;&gt; update person set name = #{name} where id = #{id}; &lt;/update&gt; /* 更新值并返回 */ &lt;select id=&#34;updateAge&#34; parameterType=&#34;Person&#34;&gt; update person set age = age &#43; #{age} where id = #{id} returning age; &lt;/select&gt; 插入或更新 方式一 &lt;insert id=&#34;addCount&#34; parameterType=&#34;CountRecord&#34;&gt; /*如果有记录，则更新；无记录，则noting*/ update count_record set &#34;count&#34; = &#34;count&#34;&#43;1 where type_id = #{typeId} and user_id = #{userId}; /*如果有记录，则noting；无记录，则插入*/ insert into count_record(type_id, user_id, &#34;count&#34;) select #{typeId}, #{userId}, 1 where not exists (select * from count where type_id = #{typeId} and user_id = #{userId}); &lt;/insert&gt; 方式2 /* 利用 PostgreSQL 的 conflic 特性 */ &lt;insert id=&#34;addCount&#34; parameterType=&#34;CountRecord&#34;&gt; insert into count_record(type_id, user_id, &#34;count&#34;) VALUES (#{typeId}, #{userId}, #{count}) on conflict(type_id,user_id) do update set &#34;count&#34; = count_record.&#34;count&#34; &#43; 1 &lt;/insert&gt; </p>
+    <p> Mybatis常用Mapper语句 插入 /*简单插入*/ &lt;insert id=&#34;insertOne&#34; parameterType=&#34;Person&#34;&gt; insert into person (id, name, age) values(#{id},#{name},#{age}); &lt;/insert&gt; /* 插入并返回对象的主键（数据库序列） */ &lt;insert id=&#34;insertOne&#34; parameterType=&#34;Person&#34; useGeneratedKeys=&#34;true&#34; keyProperty=&#34;id&#34;&gt; insert into person (name, age) VALUES(#{name}, #{age}); &lt;/insert&gt; 更新 /* 简单更新 */ &lt;update id=&#34;updateName&#34;&gt; update person set name = #{name} where id = #{id}; &lt;/update&gt; /* 更新值并返回 */ &lt;select id=&#34;updateAge&#34; parameterType=&#34;Person&#34;&gt; update person set age = age &#43; #{age} where id = #{id} returning age; &lt;/select&gt; 插入或更新 方式一 &lt;insert id=&#34;addCount&#34; parameterType=&#34;CountRecord&#34;&gt; /*如果有记录，则更新；无记录，则noting*/ update count_record set &#34;count&#34; = &#34;count&#34;&#43;1 where type_id = #{typeId} and user_id = #{userId}; /*如果有记录，则noting；无记录，则插入*/ insert into count_record(type_id, user_id, &#34;count&#34;) select #{typeId}, #{userId}, 1 where not exists (select * from count where type_id = #{typeId} and user_id = #{userId}); &lt;/insert&gt; 方式2 /* 利用 PostgreSQL 的 conflic 特性 */ &lt;insert id=&#34;addCount&#34; parameterType=&#34;CountRecord&#34;&gt; insert into count_record(type_id, user_id, &#34;count&#34;) VALUES (#{typeId}, #{userId}, #{count}) on conflict(type_id,user_id) do update set &#34;count&#34; = count_record.&#34;count&#34; &#43; 1 &lt;/insert&gt; </p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-01 13:21:07 +0800 CST'>January 1, 2025</span>&nbsp;·&nbsp;1 min</footer>
+  <footer class="entry-footer"><span title='2025-01-01 13:21:07 +0800 CST'>2025-01-01 13:21:07</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;145 words</footer>
   <a class="entry-link" aria-label="post link to Mybatis01" href="http://localhost:1313/posts/mybatis01/"></a>
 </article>
     </main>

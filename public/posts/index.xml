@@ -6,22 +6,15 @@
     <description>Recent content in Posts on 似水年华</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 11 Jan 2025 10:13:44 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 13:21:07 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>烟云16声</title>
-      <link>http://localhost:1313/posts/yanyun/yanyun01/</link>
-      <pubDate>Sat, 11 Jan 2025 10:13:44 +0800</pubDate>
-      <guid>http://localhost:1313/posts/yanyun/yanyun01/</guid>
-      <description>&lt;h1 id=&#34;心法获取&#34;&gt;心法获取&lt;/h1&gt;
-&lt;p&gt;111&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Mybatis01</title>
       <link>http://localhost:1313/posts/mybatis01/</link>
       <pubDate>Wed, 01 Jan 2025 13:21:07 +0800</pubDate>
       <guid>http://localhost:1313/posts/mybatis01/</guid>
-      <description>&lt;h3 id=&#34;mybatis常用mapper语句&#34;&gt;Mybatis常用Mapper语句&lt;/h3&gt;
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;mybatis常用mapper语句&#34;&gt;Mybatis常用Mapper语句&lt;/h3&gt;
 &lt;h4 id=&#34;插入&#34;&gt;插入&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/*简单插入*/
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;insert&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;insertOne&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;parameterType=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Person&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -86,43 +79,72 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &amp;#34;count&amp;#34; = count_record.&amp;#34;count&amp;#34; + 1
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/insert&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Redis第一篇</title>
-      <link>http://localhost:1313/posts/redis01/</link>
-      <pubDate>Wed, 01 Jan 2025 13:21:07 +0800</pubDate>
-      <guid>http://localhost:1313/posts/redis01/</guid>
-      <description>&lt;h3 id=&#34;redis-简介&#34;&gt;redis 简介&lt;/h3&gt;
-&lt;p&gt;简单来说 redis 就是一个数据库，不过与传统数据库不同的是 redis 的数据是存在内存中的，所以读写速度非常快，因此 redis 被广泛应用于缓存方向。另外，redis 也经常用来做分布式锁。redis 提供了多种数据类型来支持不同的业务场景。除此之外，redis 支持事务 、持久化、LUA脚本、LRU驱动事件、多种集群方案。&lt;/p&gt;
-&lt;h3 id=&#34;为什么要用-redis为什么要用缓存&#34;&gt;为什么要用 redis/为什么要用缓存&lt;/h3&gt;
-&lt;p&gt;主要从“高性能”和“高并发”这两点来看待这个问题。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;高性能：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;假如用户第一次访问数据库中的某些数据。这个过程会比较慢，因为是从硬盘上读取的。将该用户访问的数据存在数缓存中，这样下一次再访问这些数据的时候就可以直接从缓存中获取了。操作缓存就是直接操作内存，所以速度相当快。如果数据库中的对应数据改变的之后，同步改变缓存中相应的数据即可！&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-24/54316596.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;高并发：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;直接操作缓存能够承受的请求是远远大于直接访问数据库的，所以我们可以考虑把数据库中的部分数据转移到缓存中去，这样用户的一部分请求会直接到缓存这里而不用经过数据库。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-24/85146760.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;h3 id=&#34;为什么要用-redis-而不用-mapguava-做缓存&#34;&gt;为什么要用 redis 而不用 map/guava 做缓存?&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;下面的内容来自 segmentfault 一位网友的提问，地址：https://segmentfault.com/q/1010000009106416&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;缓存分为本地缓存和分布式缓存。以 Java 为例，使用自带的 map 或者 guava 实现的是本地缓存，最主要的特点是轻量以及快速，生命周期随着 jvm 的销毁而结束，并且在多实例的情况下，每个实例都需要各自保存一份缓存，缓存不具有一致性。&lt;/p&gt;
-&lt;p&gt;使用 redis 或 memcached 之类的称为分布式缓存，在多实例的情况下，各实例共用一份缓存数据，缓存具有一致性。缺点是需要保持 redis 或  memcached服务的高可用，整个程序架构上较为复杂。&lt;/p&gt;
-&lt;h3 id=&#34;redis-的线程模型&#34;&gt;redis 的线程模型&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参考地址:https://www.javazhiyin.com/22943.html&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;redis 内部使用文件事件处理器 &lt;code&gt;file event handler&lt;/code&gt;，这个文件事件处理器是单线程的，所以 redis 才叫做单线程的模型。它采用 IO 多路复用机制同时监听多个 socket，根据 socket 上的事件来选择对应的事件处理器进行处理。&lt;/p&gt;
-&lt;p&gt;文件事件处理器的结构包含 4 个部分：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;多个 socket&lt;/li&gt;
-&lt;li&gt;IO 多路复用程序&lt;/li&gt;
-&lt;li&gt;文件事件分派器&lt;/li&gt;
-&lt;li&gt;事件处理器（连接应答处理器、命令请求处理器、命令回复处理器）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;多个 socket 可能会并发产生不同的操作，每个操作对应不同的文件事件，但是 IO 多路复用程序会监听多个 socket，会将 socket 产生的事件放入队列中排队，事件分派器每次从队列中取出一个事件，把该事件交给对应的事件处理器进行处理。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<!-- raw HTML omitted -->
+<h3 id="mybatis常用mapper语句">Mybatis常用Mapper语句</h3>
+<h4 id="插入">插入</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>/*简单插入*/
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;insert</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;insertOne&#34;</span> <span style="color:#a6e22e">parameterType=</span><span style="color:#e6db74">&#34;Person&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    insert into person (id, name, age) values(#{id},#{name},#{age});
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/insert&gt;</span>
+</span></span><span style="display:flex;"><span>/* 插入并返回对象的主键（数据库序列） */
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;insert</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;insertOne&#34;</span> <span style="color:#a6e22e">parameterType=</span><span style="color:#e6db74">&#34;Person&#34;</span> <span style="color:#a6e22e">useGeneratedKeys=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">keyProperty=</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    insert into person (name, age) VALUES(#{name}, #{age});
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/insert&gt;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span></code></pre></div><h4 id="更新">更新</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>/* 简单更新 */
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;update</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;updateName&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>     update person set name = #{name} where id = #{id};
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/update&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>/* 更新值并返回 */
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;select</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;updateAge&#34;</span> <span style="color:#a6e22e">parameterType=</span><span style="color:#e6db74">&#34;Person&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    update person set age = age + #{age} where id = #{id} returning age;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/select&gt;</span>
+</span></span></code></pre></div><h4 id="插入或更新">插入或更新</h4>
+<ol>
+<li>方式一</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;insert</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;addCount&#34;</span> <span style="color:#a6e22e">parameterType=</span><span style="color:#e6db74">&#34;CountRecord&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span> /*如果有记录，则更新；无记录，则noting*/
+</span></span><span style="display:flex;"><span> update
+</span></span><span style="display:flex;"><span>   count_record
+</span></span><span style="display:flex;"><span> set
+</span></span><span style="display:flex;"><span>   &#34;count&#34; = &#34;count&#34;+1
+</span></span><span style="display:flex;"><span> where
+</span></span><span style="display:flex;"><span>   type_id = #{typeId}
+</span></span><span style="display:flex;"><span> and
+</span></span><span style="display:flex;"><span>   user_id = #{userId};
+</span></span><span style="display:flex;"><span> /*如果有记录，则noting；无记录，则插入*/
+</span></span><span style="display:flex;"><span> insert into
+</span></span><span style="display:flex;"><span>   count_record(type_id, user_id, &#34;count&#34;)
+</span></span><span style="display:flex;"><span>   select
+</span></span><span style="display:flex;"><span>     #{typeId}, #{userId}, 1
+</span></span><span style="display:flex;"><span>   where not exists
+</span></span><span style="display:flex;"><span>       (select
+</span></span><span style="display:flex;"><span>           *
+</span></span><span style="display:flex;"><span>        from
+</span></span><span style="display:flex;"><span>           count
+</span></span><span style="display:flex;"><span>        where
+</span></span><span style="display:flex;"><span>           type_id = #{typeId}
+</span></span><span style="display:flex;"><span>        and
+</span></span><span style="display:flex;"><span>           user_id = #{userId});
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/insert&gt;</span>
+</span></span></code></pre></div><ol start="2">
+<li>方式2</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>/* 利用 PostgreSQL 的 conflic 特性 */
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;insert</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;addCount&#34;</span> <span style="color:#a6e22e">parameterType=</span><span style="color:#e6db74">&#34;CountRecord&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span> insert into
+</span></span><span style="display:flex;"><span>   count_record(type_id, user_id, &#34;count&#34;)
+</span></span><span style="display:flex;"><span> VALUES
+</span></span><span style="display:flex;"><span>   (#{typeId}, #{userId}, #{count})
+</span></span><span style="display:flex;"><span> on
+</span></span><span style="display:flex;"><span>   conflict(type_id,user_id)
+</span></span><span style="display:flex;"><span> do update set
+</span></span><span style="display:flex;"><span>   &#34;count&#34; = count_record.&#34;count&#34; + 1
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/insert&gt;</span>
+</span></span></code></pre></div>]]></content:encoded>
     </item>
   </channel>
 </rss>
