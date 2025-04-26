@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Redis | 似水年华</title>
+<title>写作 | 似水年华</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/tags/redis/">
+<link rel="canonical" href="http://localhost:1313/tags/%E5%86%99%E4%BD%9C/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/redis/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/redis/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/%E5%86%99%E4%BD%9C/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/%E5%86%99%E4%BD%9C/">
 <noscript>
     <style>
         #theme-toggle,
@@ -135,13 +135,15 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Redis
+    写作
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/pic/mybaties.png" alt="写作技巧">
+</figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Redis第一篇
+    <h2 class="entry-hint-parent">Markdown科普
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
           <path
@@ -151,23 +153,17 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>redis 简介 简单来说 redis 就是一个数据库，不过与传统数据库不同的是 redis 的数据是存在内存中的，所以读写速度非常快，因此 redis 被广泛应用于缓存方向。另外，redis 也经常用来做分布式锁。redis 提供了多种数据类型来支持不同的业务场景。除此之外，redis 支持事务 、持久化、LUA脚本、LRU驱动事件、多种集群方案。
-为什么要用 redis/为什么要用缓存 主要从“高性能”和“高并发”这两点来看待这个问题。
-高性能：
-假如用户第一次访问数据库中的某些数据。这个过程会比较慢，因为是从硬盘上读取的。将该用户访问的数据存在数缓存中，这样下一次再访问这些数据的时候就可以直接从缓存中获取了。操作缓存就是直接操作内存，所以速度相当快。如果数据库中的对应数据改变的之后，同步改变缓存中相应的数据即可！
-高并发：
-直接操作缓存能够承受的请求是远远大于直接访问数据库的，所以我们可以考虑把数据库中的部分数据转移到缓存中去，这样用户的一部分请求会直接到缓存这里而不用经过数据库。
-为什么要用 redis 而不用 map/guava 做缓存? 下面的内容来自 segmentfault 一位网友的提问，地址：https://segmentfault.com/q/1010000009106416
-缓存分为本地缓存和分布式缓存。以 Java 为例，使用自带的 map 或者 guava 实现的是本地缓存，最主要的特点是轻量以及快速，生命周期随着 jvm 的销毁而结束，并且在多实例的情况下，每个实例都需要各自保存一份缓存，缓存不具有一致性。
-使用 redis 或 memcached 之类的称为分布式缓存，在多实例的情况下，各实例共用一份缓存数据，缓存具有一致性。缺点是需要保持 redis 或 memcached服务的高可用，整个程序架构上较为复杂。
-redis 的线程模型 参考地址:https://www.javazhiyin.com/22943.html
-redis 内部使用文件事件处理器 file event handler，这个文件事件处理器是单线程的，所以 redis 才叫做单线程的模型。它采用 IO 多路复用机制同时监听多个 socket，根据 socket 上的事件来选择对应的事件处理器进行处理。
-文件事件处理器的结构包含 4 个部分：
-多个 socket IO 多路复用程序 文件事件分派器 事件处理器（连接应答处理器、命令请求处理器、命令回复处理器） 多个 socket 可能会并发产生不同的操作，每个操作对应不同的文件事件，但是 IO 多路复用程序会监听多个 socket，会将 socket 产生的事件放入队列中排队，事件分派器每次从队列中取出一个事件，把该事件交给对应的事件处理器进行处理。
-...</p>
+    <p>Markdown 只有干货没有废话.
+标题 # 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 一级标题 二级标题 三级标题 四级标题 五级标题 六级标题 字体 代码 效果 *这是斜体* 这是斜体 _这是斜体_ 这是斜体 **这是粗体** 这是粗体 __这是粗体__ 这是粗体 ***这是粗斜体*** 这是粗斜体 ___这是粗斜体___ 这是粗斜体 加粗Ctrl&#43;B 斜体Ctrl&#43;I 下划线Ctrl&#43;U 删除线Alt&#43;Shift&#43;5 &lt;br/&gt; 换行
+引用 &gt;这是一个引用： &gt;&gt;这是一个引用的引用 &gt;&gt;&gt;这是一个引用的引用的引用 效果:
+这是一个引用：
+这是一个引用的引用
+这是一个引用的引用的引用
+链接 [链接名称](链接地址) 即是： [这是brad的主页](https://zbzlf120.github.io/) 或者 &lt;https://zbzlf120.github.io/&gt; 效果: 这是brad的主页 https://zbzlf120.github.io/
+图片 ![图片描述，可写可不写，但是中括号要有](图片地址) ![mybaties](/pic/mybaties.png) 效果: </p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-01 13:21:07 +0800 CST'>2025-01-01 13:21:07</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;408 words</footer>
-  <a class="entry-link" aria-label="post link to Redis第一篇" href="http://localhost:1313/posts/redis01/"></a>
+  <footer class="entry-footer"><span title='2025-04-26 11:26:06 +0800 CST'>2025-04-26 11:26:06</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;63 words</footer>
+  <a class="entry-link" aria-label="post link to Markdown科普" href="http://localhost:1313/posts/note/markdown%E7%A7%91%E6%99%AE/"></a>
 </article>
     </main>
     
